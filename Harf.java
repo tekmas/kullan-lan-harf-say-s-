@@ -8,15 +8,13 @@ import java.util.Scanner;
 public class Harf {
     public static void kelime_harfsayisi(String cumle)
     {
-        Map<Character, Integer> harf_kullanım;harf_kullanım = new HashMap<>();
+        Map<Character, Integer> harf_kullanım = new HashMap<>();
         int sayi, index=0;
         for (int i = 0; i < cumle.length(); i++)
         { sayi=0;
-            if (!harf_kullanım.containsKey(i)) {
                 for (int j = 0; j < cumle.length(); j++) {
                     if (cumle.toLowerCase().charAt(i) == cumle.toLowerCase().charAt(j))
                         ++sayi;
-                }
             }
                 index=i;
                 harf_kullanım.put((cumle.toLowerCase().charAt(index)),sayi);

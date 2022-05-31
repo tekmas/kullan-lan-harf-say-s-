@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Classes {
 
-     static int FirstFactorial(int num) {
+     static int FirstFactorial(int num) {//faktoriyel hesaplama
         int sonuc =1;
             for (int i=num;i>=1;i--){
                 sonuc = sonuc*i;
